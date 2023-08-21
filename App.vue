@@ -67,7 +67,7 @@ const member = groups.forEach((group) => {
           <tr
             v-for="(group, index) in groups"
             :key="group.projectName"
-            :class="index % 2 === 0 ? 'bg-white' : 'bg-gray-200'"
+            :class="index % 2 !== 0 ? 'bg-white' : 'bg-gray-200'"
             class="mb-4 pb-4"
           >
             <td class="pt-2 pl-14 pb-4 pr-36">{{ group.section }}</td>
